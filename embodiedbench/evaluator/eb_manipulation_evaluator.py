@@ -11,6 +11,30 @@ from embodiedbench.envs.eb_manipulation.eb_man_utils import form_object_coord_fo
 from embodiedbench.planner.manip_planner import ManipPlanner
 from embodiedbench.evaluator.config.eb_manipulation_example import vlm_examples_baseline, llm_examples, vlm_examples_ablation
 from embodiedbench.main import logger
+import imageio.v2 as iio
+import os
+import re
+
+def create_gif_with_imageio(image_folder, episode_num, output_gif=None, fps=2):
+    # 构建匹配当前 episode 的文件名模式
+        pattern = rf"episode_{episode_num}_step_(\d+)_front_rgb\.png"
+        images = []
+        for f in os.listdir(image_folder):
+            match = re.search(pattern, f)
+            if match:
+                step = int(match.group(1))
+                images.append((step, os.path.join(image_folder, f)))
+        images.sort()
+
+        if not images:
+            print(f"在 {image_folder} 中没有找到 episode {episode_num} 的图片！")
+            return
+
+        frames = [iio.imread(path) for _, path in images]
+        if output_gif is None:
+            output_gif = f"episode_{episode_num}.gif"
+        iio.mimsave(output_gif, frames, format='GIF', fps=fps, loop=0)
+        print(f"已生成 {output_gif}，共 {len(frames)} 帧")
 
 class EB_ManipulationEvaluator():
     def __init__(self, config):
@@ -96,9 +120,12 @@ class EB_ManipulationEvaluator():
         with open(os.path.join(res_path, filename), 'w', encoding='utf-8') as f:
             json.dump(task_log, f, ensure_ascii=False)
 
+   
+
     def evaluate(self):
         progress_bar = tqdm(total=self.env.number_of_episodes, desc="Episodes")
         while self.env._current_episode_num < self.env.number_of_episodes:
+            episode_num = self.env._current_episode_num+1
             logger.info(f"Evaluating episode {self.env._current_episode_num} ...")
             episode_info = {'reward': [], 'action_success': []}
             image_history = []
@@ -109,7 +136,9 @@ class EB_ManipulationEvaluator():
             else:
                 camera_views = ['front_rgb']
             img_path_list = self.env.save_image(camera_views)
-
+            # 确定图片保存目录（从第一张图片路径中提取）
+            image_folder = os.path.dirname(img_path_list[0]) if img_path_list else self.env.log_path
+           
             avg_obj_coord, all_avg_point_list, camera_extrinsics_list, camera_intrinsics_list = form_object_coord_for_input(vars(copy.deepcopy(obs)), self.env.task_class, camera_views)
             if not self.config['language_only']:
                 for i, img_path in enumerate(img_path_list):
@@ -165,6 +194,16 @@ class EB_ManipulationEvaluator():
                             if image_history[-1].split('.png')[0] in img_path_list[0]:
                                 image_history.pop()
                                 image_history.append(img_path_list[0])
+            
+            #最新添加的
+           
+            if image_folder and os.path.exists(image_folder):
+                gif_dir = os.path.join(self.env.log_path, 'gifs')
+                os.makedirs(gif_dir, exist_ok=True)
+                output_gif = os.path.join(gif_dir, f'episode_{episode_num}.gif')
+                create_gif_with_imageio(image_folder, episode_num, output_gif=output_gif, fps=5)
+            else:
+                logger.warning(f"Image folder {image_folder} does not exist, cannot create GIF.")
             
             # evaluation metrics
             episode_info['instruction'] = user_instruction
