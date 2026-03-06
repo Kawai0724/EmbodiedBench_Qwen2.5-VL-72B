@@ -9,14 +9,22 @@ https://github.com/EmbodiedBench/EmbodiedBench.git
 本仓库实现了EmbodiedBench在EB-Manipulation环境中Qwen2.5-VL-72B的测评，以base任务为例:
 
 <div align="center">
-  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-    <figure style="margin: 0; text-align: center;">
-      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_1.gif" width="320" alt="失败案例" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <figcaption style="margin-top: 10px; font-weight: 500; color: #d9534f;">❌ 失败案例: Pick up the star and place it into the silver container</figcaption>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+    <figure style="margin: 0; text-align: center; max-width: 320px;">
+      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_1.gif" 
+           style="width: 100%; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);" 
+           alt="失败案例">
+      <figcaption style="margin-top: 12px; font-size: 0.95em; color: #c7254e;">
+        ❌ 失败案例：Pick up the star and place it into the silver container
+      </figcaption>
     </figure>
-    <figure style="margin: 0; text-align: center;">
-      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_17.gif" width="320" alt="成功案例" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <figcaption style="margin-top: 10px; font-weight: 500; color: #5cb85c;">✅ 成功案例: Stack the maroon triangular prism and the olive triangular prism in sequence.</figcaption>
+    <figure style="margin: 0; text-align: center; max-width: 320px;">
+      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_17.gif" 
+           style="width: 100%; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);" 
+           alt="成功案例">
+      <figcaption style="margin-top: 12px; font-size: 0.95em; color: #3c763d;">
+        ✅ 成功案例：Stack the maroon triangular prism and the olive triangular prism in sequence.
+      </figcaption>
     </figure>
   </div>
 </div>
