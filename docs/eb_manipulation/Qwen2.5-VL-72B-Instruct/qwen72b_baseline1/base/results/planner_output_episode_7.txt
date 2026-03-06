@@ -1,0 +1,36 @@
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [29, 9, 17], a purple cube at [44, 25, 18], a lime container at [57, 44, 17], a black cylinder at [38, 48, 18], a blue container at [81, 68, 18], and a blue triangular prism at [63, 79, 17].",
+    "reasoning_and_reflection": "The task is to pick up the black cylinder located at [38, 48, 18] and place it into the lime container located at [57, 44, 17]. The plan involves moving the gripper to the black cylinder's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cylinder into the container.",
+    "language_plan": "1. Move the gripper to the position of the black cylinder. 2. Close the gripper to pick up the black cylinder. 3. Move the gripper to the position of the lime container. 4. Open the gripper to place the black cylinder into the lime container.",
+    "executable_plan": 	[
+			{ "action": "[38, 48, 18, 6, 61, 36, 1]" },
+		{ "action": "[38, 48, 18, 6, 61, 36, 0]" },
+		{ "action": "[35, 46, 26, 6, 61, 36, 0]" },
+		{ "action": "[54, 42, 24, 88, 32, 77, 0]" },
+		{ "action": "[54, 42, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [29, 9, 17], a black cylinder at [44, 24, 18], a green cylinder at [53, 40, 26], a green container at [58, 43, 17], a blue container at [80, 68, 17], and a white cube at [62, 79, 17].",
+    "reasoning_and_reflection": "The task is to pick up the cylinder located at [53, 40, 26] and place it into the lime container located at [58, 43, 17]. The plan involves moving the gripper to the cylinder's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cylinder into the container.",
+    "language_plan": "Step 1: Move the gripper to the position of the cylinder. Step 2: Close the gripper to pick up the cylinder. Step 3: Move the gripper to the position of the lime container. Step 4: Open the gripper to place the cylinder into the lime container.",
+    "executable_plan": 	[
+			{ "action": "[53, 40, 26, 6, 61, 36, 1]" },
+		{ "action": "[53, 40, 26, 6, 61, 36, 0]" },
+		{ "action": "[50, 38, 24, 6, 61, 36, 0]" },
+		{ "action": "[58, 42, 24, 88, 32, 77, 0]" },
+		{ "action": "[58, 42, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [29, 9, 17], a blue cylinder at [44, 25, 18], a lime container at [61, 41, 17], a blue container at [80, 68, 17], and a grey cylinder at [62, 79, 17].",
+    "reasoning_and_reflection": "The task is to pick up the cylinder located at [44, 25, 18] and place it into the lime container located at [61, 41, 17]. The plan involves moving the gripper to the cylinder's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cylinder into the container.",
+    "language_plan": "1 Move to the cylinder at [44, 25, 18]. 2 Close the gripper to pick up the cylinder. 3 Move to the lime container at [61, 41, 17]. 4 Open the gripper to release the cylinder into the lime container.",
+    "executable_plan": 	[
+			{ "action": "[44, 25, 18, 6, 61, 36, 1]" },
+		{ "action": "[44, 25, 18, 6, 61, 36, 0]" },
+		{ "action": "[41, 24, 26, 6, 61, 36, 0]" },
+		{ "action": "[60, 40, 24, 88, 32, 77, 0]" },
+		{ "action": "[60, 40, 24, 87, 32, 77, 1]" }
+	]
+}

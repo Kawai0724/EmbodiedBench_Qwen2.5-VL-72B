@@ -1,0 +1,36 @@
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [74, 10, 17], a silver container at [35, 46, 17], a yellow container at [70, 61, 17], and a purple triangular prism at [43, 72, 18].",
+    "reasoning_and_reflection": "The task is to pick up the triangular prism located at [43, 72, 18] and place it into the silver container located at [35, 46, 17]. The plan involves moving the gripper to the triangular prism's position, closing the gripper to pick it up, moving to the silver container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "1. Move the gripper to the position of the triangular prism. 2. Close the gripper to pick up the triangular prism. 3. Move the gripper to the position of the silver container. 4. Open the gripper to release the triangular prism into the silver container.",
+    "executable_plan": 	[
+			{ "action": "[43, 72, 18, 6, 61, 36, 1]" },
+		{ "action": "[43, 72, 18, 6, 61, 36, 0]" },
+		{ "action": "[40, 71, 26, 6, 61, 36, 0]" },
+		{ "action": "[35, 46, 24, 88, 32, 77, 0]" },
+		{ "action": "[35, 46, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [74, 10, 17], a green triangular prism at [35, 44, 24], a silver container at [34, 46, 18], and a yellow container at [70, 61, 17].",
+    "reasoning_and_reflection": "The task is to pick up the triangular prism located at [35, 44, 24] and place it into the silver container located at [34, 46, 18]. The plan involves moving the gripper to the triangular prism's position, closing the gripper to pick it up, moving to the silver container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "Step 1: Move the gripper to the position of the triangular prism. Step 2: Close the gripper to pick up the triangular prism. Step 3: Move the gripper to the position of the silver container. Step 4: Open the gripper to release the triangular prism into the silver container.",
+    "executable_plan": 	[
+			{ "action": "[35, 44, 24, 6, 61, 36, 1]" },
+		{ "action": "[35, 44, 24, 6, 61, 36, 0]" },
+		{ "action": "[32, 43, 30, 6, 61, 36, 0]" },
+		{ "action": "[34, 46, 20, 88, 32, 77, 0]" },
+		{ "action": "[34, 46, 20, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a purple cylinder at [74, 10, 17], a black triangular prism at [49, 31, 17], a silver container at [35, 43, 17], and a yellow container at [70, 61, 17].",
+    "reasoning_and_reflection": "The task is to pick up the triangular prism located at [49, 31, 17] and place it into the silver container located at [35, 43, 17]. The plan involves moving the gripper to the triangular prism's position, closing the gripper to pick it up, moving to the silver container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "1 Move to the position of the triangular prism. 2 Close the gripper to pick up the triangular prism. 3 Move to the position of the silver container. 4 Open the gripper to release the triangular prism into the silver container.",
+    "executable_plan": 	[
+			{ "action": "[49, 31, 17, 6, 61, 36, 1]" },
+		{ "action": "[49, 31, 17, 6, 61, 36, 0]" },
+		{ "action": "[46, 30, 26, 6, 61, 36, 0]" },
+		{ "action": "[35, 43, 24, 88, 32, 77, 0]" },
+		{ "action": "[35, 43, 24, 87, 32, 77, 1]" }
+	]
+}

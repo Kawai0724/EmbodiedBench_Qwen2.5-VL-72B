@@ -1,0 +1,36 @@
+{
+    "visual_state_description": "From left to right, I can see a silver cylinder at [35, 15, 17], a blue star at [57, 18, 18], a green container at [49, 37, 17], a red container at [76, 69, 17] and a yellow cylinder at [54, 81, 18].",
+    "reasoning_and_reflection": "The task is to pick up the star located at [57, 18, 18] and place it into the red container located at [76, 69, 17]. The plan involves moving the gripper to the star's position, closing the gripper to pick it up, moving to the red container's position, and opening the gripper to release the star into the container.",
+    "language_plan": "1. Move the gripper to the position of the star. 2. Close the gripper to pick up the star. 3. Move the gripper to the position of the red container. 4. Open the gripper to release the star into the red container.",
+    "executable_plan": 	[
+			{ "action": "[57, 18, 18, 6, 61, 36, 1]" },
+		{ "action": "[57, 18, 18, 6, 61, 36, 0]" },
+		{ "action": "[54, 17, 26, 6, 61, 36, 0]" },
+		{ "action": "[76, 68, 24, 88, 32, 77, 0]" },
+		{ "action": "[76, 68, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a silver cylinder at [35, 14, 17], a purple container at [50, 36, 17], a red container at [78, 66, 17], a red star at [76, 66, 26], and a green triangular prism at [55, 84, 19].",
+    "reasoning_and_reflection": "The task is to pick up the star located at [76, 66, 26] and place it into the red container located at [78, 66, 17]. The plan involves moving the gripper to the star's position, closing the gripper to pick it up, moving to the red container's position, and opening the gripper to release the star into the container.",
+    "language_plan": "1. Move the gripper to the position of the star. 2. Close the gripper to pick up the star. 3. Move the gripper to the position of the red container. 4. Open the gripper to place the star into the red container.",
+    "executable_plan":  [
+        	{"action": "[57, 18, 18, 6, 61, 36, 1]"},
+        	{"action": "[57, 18, 18, 6, 61, 36, 0]"},
+        	{"action": "[54, 17, 26, 6, 61, 36, 0]"},
+        	{"action": "[76, 68, 24, 88, 32, 77, 0]"},
+        	{"action": "[76, 68, 24, 87, 32, 77, 1]"}
+    ]
+}
+{
+    "visual_state_description": "From left to right, I can see a silver cylinder at [35, 14, 17], a blue star at [50, 36, 17], a red container at [78, 66, 17], a green cube at [76, 67, 18], and a grey cylinder at [53, 83, 18].",
+    "reasoning_and_reflection": "The task is to pick up the star located at [50, 36, 17] and place it into the red container located at [78, 66, 17]. The plan involves moving the gripper to the star's position, closing the gripper to pick it up, moving to the red container's position, and opening the gripper to release the star into the container. The previous actions are redundant and do not contribute to the task completion.",
+    "language_plan": "1. Move the gripper to the position of the star. 2. Close the gripper to pick up the star. 3. Move the gripper to the position of the red container. 4. Open the gripper to release the star into the red container.",
+    "executable_plan": 	[
+			{ "action": "[50, 36, 17, 6, 61, 36, 1]" },
+		{ "action": "[50, 36, 17, 6, 61, 36, 0]" },
+		{ "action": "[47, 35, 26, 6, 61, 36, 0]" },
+		{ "action": "[78, 65, 24, 88, 32, 77, 0]" },
+		{ "action": "[78, 65, 24, 87, 32, 77, 1]" }
+	]
+}

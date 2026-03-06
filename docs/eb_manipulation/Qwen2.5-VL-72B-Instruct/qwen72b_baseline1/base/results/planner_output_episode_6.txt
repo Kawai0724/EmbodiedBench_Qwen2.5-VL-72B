@@ -1,0 +1,36 @@
+{
+    "visual_state_description": "From left to right, I can see a navy container at [37, 25, 17], a blue triangular prism at [60, 42, 17], a yellow star at [40, 43, 18], a blue cylinder at [35, 57, 17], a yellow cube at [35, 75, 18], and a yellow cube at [74, 77, 18].",
+    "reasoning_and_reflection": "The task is to pick up the triangular prism located at [60, 42, 17] and place it into the navy container located at [37, 25, 17]. The plan involves moving the gripper to the triangular prism's position, closing the gripper to pick it up, moving to the navy container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "1. Move the gripper to the position of the blue triangular prism. 2. Close the gripper to pick up the triangular prism. 3. Move the gripper to the position of the navy container. 4. Open the gripper to place the triangular prism into the navy container.",
+    "executable_plan": 	[
+			{ "action": "[60, 42, 17, 6, 61, 36, 1]" },
+		{ "action": "[60, 42, 17, 6, 61, 36, 0]" },
+		{ "action": "[57, 41, 26, 6, 61, 36, 0]" },
+		{ "action": "[39, 24, 24, 88, 32, 77, 0]" },
+		{ "action": "[39, 24, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a red triangular prism at [37, 23, 17], a blue triangular prism at [60, 42, 17], a navy container at [40, 43, 18], a yellow star at [35, 57, 17], a blue cylinder at [35, 74, 18], and a yellow cube at [74, 77, 18].",
+    "reasoning_and_reflection": "The task is to pick up the blue triangular prism located at [60, 42, 17] and place it into the navy container located at [40, 43, 18]. The plan involves moving the gripper to the blue triangular prism's position, closing the gripper to pick it up, moving to the navy container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "1. Move the gripper to the position of the blue triangular prism. 2. Close the gripper to pick up the blue triangular prism. 3. Move the gripper to the position of the navy container. 4. Open the gripper to release the blue triangular prism into the navy container.",
+    "executable_plan":  [
+        	{"action": "[60, 42, 17, 6, 61, 36, 1]"},
+        	{"action": "[60, 42, 17, 6, 61, 36, 0]"},
+        	{"action": "[57, 41, 26, 6, 61, 36, 0]"},
+        	{"action": "[39, 42, 24, 88, 32, 77, 0]"},
+        	{"action": "[39, 42, 24, 87, 32, 77, 1]"}
+    ]
+}
+{
+    "visual_state_description": "From left to right, I can see a navy container at [37, 25, 17], a yellow triangular prism at [58, 41, 17], a green cylinder at [35, 58, 17], a blue cylinder at [35, 74, 18], and a yellow cube at [74, 77, 18].",
+    "reasoning_and_reflection": "The task is to pick up the triangular prism located at [58, 41, 17] and place it into the navy container located at [37, 25, 17]. The plan involves moving the gripper to the triangular prism's position, closing the gripper to pick it up, moving to the navy container's position, and opening the gripper to release the triangular prism into the container.",
+    "language_plan": "1. Move the gripper to the position of the triangular prism. 2. Close the gripper to pick up the triangular prism. 3. Move the gripper to the position of the navy container. 4. Open the gripper to place the triangular prism into the navy container.",
+    "executable_plan":  [
+        	{"action": "[58, 41, 17, 6, 61, 36, 1]"},
+        	{"action": "[58, 41, 17, 6, 61, 36, 0]"},
+        	{"action": "[55, 40, 26, 6, 61, 36, 0]"},
+        	{"action": "[39, 24, 24, 88, 32, 77, 0]"},
+        	{"action": "[39, 24, 24, 87, 32, 77, 1]"}
+    ]
+}

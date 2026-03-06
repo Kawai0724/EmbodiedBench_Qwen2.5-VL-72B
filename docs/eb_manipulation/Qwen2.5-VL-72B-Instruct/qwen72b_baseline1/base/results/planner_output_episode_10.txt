@@ -1,0 +1,36 @@
+{
+    "visual_state_description": "From left to right, I can see a blue container at [71, 16, 17], a blue cube at [51, 26, 18], a purple cylinder at [61, 34, 18], a lime container at [83, 37, 17], a green triangular prism at [71, 47, 17], and a red cylinder at [49, 76, 18].",
+    "reasoning_and_reflection": "The task is to pick up the cube located at [51, 26, 18] and place it into the lime container located at [83, 37, 17]. The plan involves moving the gripper to the cube's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cube into the container.",
+    "language_plan": "1. Move the gripper to the position of the blue cube. 2. Close the gripper to pick up the blue cube. 3. Move the gripper to the position of the lime container. 4. Open the gripper to release the blue cube into the lime container.",
+    "executable_plan": 	[
+			{ "action": "[51, 26, 18, 6, 61, 36, 1]" },
+		{ "action": "[51, 26, 18, 6, 61, 36, 0]" },
+		{ "action": "[48, 25, 26, 6, 61, 36, 0]" },
+		{ "action": "[82, 36, 24, 88, 32, 77, 0]" },
+		{ "action": "[82, 36, 24, 87, 32, 77, 1]" }
+	]
+}
+{
+    "visual_state_description": "From left to right, I can see a blue cube at [71, 17, 17], a purple cube at [79, 28, 34], a lime container at [70, 30, 18], a green cube at [84, 36, 18], a blue triangular prism at [71, 49, 17], and a red cylinder at [49, 76, 18].",
+    "reasoning_and_reflection": "The task is to pick up the cube located at [79, 28, 34] and place it into the lime container located at [70, 30, 18]. The plan involves moving the gripper to the cube's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cube into the container.",
+    "language_plan": "Step 1: Move the gripper to the position of the cube. Step 2: Close the gripper to pick up the cube. Step 3: Move the gripper to the position of the lime container. Step 4: Open the gripper to release the cube into the lime container.",
+    "executable_plan":  [
+        	{"action": "[79, 28, 34, 6, 61, 36, 1]"},
+        	{"action": "[79, 28, 34, 6, 61, 36, 0]"},
+        	{"action": "[76, 27, 26, 6, 61, 36, 0]"},
+        	{"action": "[70, 30, 24, 88, 32, 77, 0]"},
+        	{"action": "[70, 30, 24, 87, 32, 77, 1]"}
+    ]
+}
+{
+    "visual_state_description": "From left to right, I can see a blue container at [70, 20, 18], a purple cube at [88, 21, 18], a lime container at [70, 30, 18], a green triangular prism at [83, 36, 18], a grey cylinder at [74, 48, 17], and a purple container at [50, 77, 18].",
+    "reasoning_and_reflection": "The task is to pick up the cube located at [88, 21, 18] and place it into the lime container located at [70, 30, 18]. The plan involves moving the gripper to the cube's position, closing the gripper to pick it up, moving to the lime container's position, and opening the gripper to release the cube into the container.",
+    "language_plan": "1. Move the gripper to the position of the cube. 2. Close the gripper to pick up the cube. 3. Move the gripper to the position of the lime container. 4. Open the gripper to release the cube into the lime container.",
+    "executable_plan":  [
+        	{ "action": "[88, 21, 18, 6, 61, 36, 1]" },
+        { "action": "[88, 21, 18, 6, 61, 36, 0]" },
+        { "action": "[85, 20, 26, 6, 61, 36, 0]" },
+        { "action": "[70, 29, 24, 88, 32, 77, 0]" },
+        { "action": "[70, 29, 24, 87, 32, 77, 1]" }
+    ]
+}
