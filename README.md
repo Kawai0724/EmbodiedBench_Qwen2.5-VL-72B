@@ -8,15 +8,17 @@ https://github.com/EmbodiedBench/EmbodiedBench.git
 ## 🎉复现效果展示
 本仓库实现了EmbodiedBench在EB-Manipulation环境中Qwen2.5-VL-72B的测评，以base任务为例:
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin-right: 20px;">
-    <img src="docs\eb_manipulation\Qwen2.5-VL-72B-Instruct\qwen72b_baseline1\base\gifs\episode_1.gif" width="300">
-    <figcaption>失败案例:Pick up the star and place it into the silver container </figcaption>
-  </figure>
-  <figure style="display: inline-block;">
-    <img src="docs\eb_manipulation\Qwen2.5-VL-72B-Instruct\qwen72b_baseline1\base\gifs\episode_17.gif" width="300">
-    <figcaption>成功案例:Stack the maroon triangular prism and the olive triangular prism in sequence.</figcaption>
-  </figure>
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    <figure style="margin: 0; text-align: center;">
+      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_1.gif" width="320" alt="失败案例" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <figcaption style="margin-top: 10px; font-weight: 500; color: #d9534f;">❌ 失败案例: Pick up the star and place it into the silver container</figcaption>
+    </figure>
+    <figure style="margin: 0; text-align: center;">
+      <img src="docs/eb_manipulation/Qwen2.5-VL-72B-Instruct/qwen72b_baseline1/base/gifs/episode_17.gif" width="320" alt="成功案例" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <figcaption style="margin-top: 10px; font-weight: 500; color: #5cb85c;">✅ 成功案例: Stack the maroon triangular prism and the olive triangular prism in sequence.</figcaption>
+    </figure>
+  </div>
 </div>
 
 ## 💡本仓库的主要贡献
